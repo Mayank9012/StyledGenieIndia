@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 import Container from "@/components/ui/Container";
 import { typography } from "@/styles/typography";
