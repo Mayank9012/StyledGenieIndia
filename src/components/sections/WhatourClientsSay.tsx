@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import Image from "next/image";
 
 interface ClientCardProps {
     name: string;
@@ -17,16 +18,22 @@ const ClientCard = ({ name, title, description, image }: ClientCardProps) => {
     return (
         <div className="bg-gray-100 rounded-2xl p-5 mx-auto shadow-lg w-full sm:w-[300px]">
             <p className="text-gray-800 text-sm leading-relaxed mb-6">
-            {description}
+                {description}
             </p>
             <div className="flex items-center gap-3 mt-5">
-            <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow">
-                <img src={image} alt={name} className="w-8 h-8 rounded-full object-cover"/>
-            </div>
-            <div>
-                <h4 className="font-semibold text-black text-sm">{name}</h4>
-                <p className="text-gray-500 text-xs">{title}</p>
-            </div>
+                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow">
+                    <Image
+                        src={image}
+                        alt={name}
+                        width={48}
+                        height={48}
+                        className="rounded-full object-cover"
+                    />
+                </div>
+                <div>
+                    <h4 className="font-semibold text-black text-sm">{name}</h4>
+                    <p className="text-gray-500 text-xs">{title}</p>
+                </div>
             </div>
         </div>
     );
@@ -54,73 +61,73 @@ const clients = [
     {
         name: "Jane Doe",
         title: "CEO, Company",
-        description: "Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalar consectur elementum tempus sit hac.Lorem ipsum dolor sit amet ipsum consecte tur. Lorem ipsum dolor sit amet consecte tur.",
+        description: "Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar consectetur elementum tempus sit hac. Lorem ipsum dolor sit amet ipsum consectetur. Lorem ipsum dolor sit amet consectetur.",
         image: "https://cdn-icons-png.flaticon.com/128/456/456212.png",
     },
     {
         name: "John Doe",
         title: "CEO, Company",
-        description: "Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalar consectur elementum tempus sit hac.Lorem ipsum dolor sit amet ipsum consecte tur. Lorem ipsum dolor sit amet consecte tur.",
+        description: "Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar consectetur elementum tempus sit hac. Lorem ipsum dolor sit amet ipsum consectetur. Lorem ipsum dolor sit amet consectetur.",
         image: "https://cdn-icons-png.flaticon.com/128/456/456212.png",
     },
     {
         name: "Alice Smith",
         title: "Marketing Head",
-        description: "Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalar consectur elementum tempus sit hac.Lorem ipsum dolor sit amet ipsum consecte tur. Lorem ipsum dolor sit amet consecte tur.",
+        description: "Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar consectetur elementum tempus sit hac. Lorem ipsum dolor sit amet ipsum consectetur. Lorem ipsum dolor sit amet consectetur.",
         image: "https://cdn-icons-png.flaticon.com/128/456/456212.png",
     },
     {
         name: "Jane Doe",
         title: "CEO, Company",
-        description: "Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalar consectur elementum tempus sit hac.Lorem ipsum dolor sit amet ipsum consecte tur. Lorem ipsum dolor sit amet consecte tur.",
+        description: "Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar consectetur elementum tempus sit hac. Lorem ipsum dolor sit amet ipsum consectetur. Lorem ipsum dolor sit amet consectetur.",
         image: "https://cdn-icons-png.flaticon.com/128/456/456212.png",
     },
     {
         name: "John Doe",
         title: "CEO, Company",
-        description: "Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalar consectur elementum tempus sit hac.Lorem ipsum dolor sit amet ipsum consecte tur. Lorem ipsum dolor sit amet consecte tur.",
+        description: "Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar consectetur elementum tempus sit hac. Lorem ipsum dolor sit amet ipsum consectetur. Lorem ipsum dolor sit amet consectetur.",
         image: "https://cdn-icons-png.flaticon.com/128/456/456212.png",
     },
     {
         name: "Alice Smith",
         title: "Marketing Head",
-        description: "Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalar consectur elementum tempus sit hac.Lorem ipsum dolor sit amet ipsum consecte tur. Lorem ipsum dolor sit amet consecte tur.",
+        description: "Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar consectetur elementum tempus sit hac. Lorem ipsum dolor sit amet ipsum consectetur. Lorem ipsum dolor sit amet consectetur.",
         image: "https://cdn-icons-png.flaticon.com/128/456/456212.png",
     },
     {
         name: "Jane Doe",
         title: "CEO, Company",
-        description: "Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalar consectur elementum tempus sit hac.Lorem ipsum dolor sit amet ipsum consecte tur. Lorem ipsum dolor sit amet consecte tur.",
+        description: "Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar consectetur elementum tempus sit hac. Lorem ipsum dolor sit amet ipsum consectetur. Lorem ipsum dolor sit amet consectetur.",
         image: "https://cdn-icons-png.flaticon.com/128/456/456212.png",
     },
     {
         name: "John Doe",
         title: "CEO, Company",
-        description: "Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalar consectur elementum tempus sit hac.Lorem ipsum dolor sit amet ipsum consecte tur. Lorem ipsum dolor sit amet consecte tur.",
+        description: "Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar consectetur elementum tempus sit hac. Lorem ipsum dolor sit amet ipsum consectetur. Lorem ipsum dolor sit amet consectetur.",
         image: "https://cdn-icons-png.flaticon.com/128/456/456212.png",
     },
     {
         name: "Alice Smith",
         title: "Marketing Head",
-        description: "Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalar consectur elementum tempus sit hac.Lorem ipsum dolor sit amet ipsum consecte tur. Lorem ipsum dolor sit amet consecte tur.",
+        description: "Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar consectetur elementum tempus sit hac. Lorem ipsum dolor sit amet ipsum consectetur. Lorem ipsum dolor sit amet consectetur.",
         image: "https://cdn-icons-png.flaticon.com/128/456/456212.png",
     },
     {
         name: "Jane Doe",
         title: "CEO, Company",
-        description: "Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalar consectur elementum tempus sit hac.Lorem ipsum dolor sit amet ipsum consecte tur. Lorem ipsum dolor sit amet consecte tur.",
+        description: "Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar consectetur elementum tempus sit hac. Lorem ipsum dolor sit amet ipsum consectetur. Lorem ipsum dolor sit amet consectetur.",
         image: "https://cdn-icons-png.flaticon.com/128/456/456212.png",
     },
     {
         name: "John Doe",
         title: "CEO, Company",
-        description: "Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalar consectur elementum tempus sit hac.Lorem ipsum dolor sit amet ipsum consecte tur. Lorem ipsum dolor sit amet consecte tur.",
+        description: "Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar consectetur elementum tempus sit hac. Lorem ipsum dolor sit amet ipsum consectetur. Lorem ipsum dolor sit amet consectetur.",
         image: "https://cdn-icons-png.flaticon.com/128/456/456212.png",
     },
     {
         name: "Alice Smith",
         title: "Marketing Head",
-        description: "Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalar consectur elementum tempus sit hac.Lorem ipsum dolor sit amet ipsum consecte tur. Lorem ipsum dolor sit amet consecte tur.",
+        description: "Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar consectetur elementum tempus sit hac. Lorem ipsum dolor sit amet ipsum consectetur. Lorem ipsum dolor sit amet consectetur.",
         image: "https://cdn-icons-png.flaticon.com/128/456/456212.png",
     },
 ];
@@ -142,7 +149,7 @@ const WhatourClientsSay = () => {
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
-                    dots:true,
+                    dots: true,
                 },
             },
             {
@@ -150,7 +157,7 @@ const WhatourClientsSay = () => {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    dots:true,
+                    dots: true,
                 },
             },
         ],
