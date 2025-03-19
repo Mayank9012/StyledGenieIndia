@@ -1,5 +1,4 @@
 "use client";
-import Image from 'next/image';
 import Container from '@/components/ui/Container';
 import { typography } from '@/styles/typography';
 import Button from '@/components/ui/Button';
