@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import Container from '../ui/Container';
 import { FaFacebookF, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 
