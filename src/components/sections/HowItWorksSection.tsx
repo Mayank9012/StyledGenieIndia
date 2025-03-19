@@ -1,5 +1,7 @@
 import Container from '@/components/ui/Container';
 import { typography } from '@/styles/typography';
+import Image from 'next/image';
+
 
 const HowItWorksSection = () => {
   const steps = [
