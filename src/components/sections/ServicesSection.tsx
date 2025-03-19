@@ -2,6 +2,8 @@ import Link from 'next/link';
 import Container from '@/components/ui/Container';
 import { typography } from '@/styles/typography';
 import { HiArrowNarrowRight } from 'react-icons/hi';
+import Image from 'next/image';
+
 
 interface ServiceCardProps {
   title: string;
