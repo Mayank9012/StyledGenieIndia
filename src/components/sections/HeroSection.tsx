@@ -9,7 +9,7 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-8">
           <div>
             <h1 className={`${typography.heading.h1} mb-6`}>
-              Your Style, Our Expertise
+              Your Style
             </h1>
             <p className={`${typography.body.large} text-gray-600 mb-8 `}>
               Transform your wardrobe or your look with a personalized styling experience designed just for you.
